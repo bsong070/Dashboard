@@ -1,2 +1,2 @@
 # Dashboard
-Dashboard for quick access to useful daily information
+Dashboard for quick access to notes, to do tasks, and a quick news search for the morning
