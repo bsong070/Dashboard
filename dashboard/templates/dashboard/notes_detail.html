@@ -1,0 +1,21 @@
+{% extends 'dashboard/base.html' %} {% load static %} {% block content %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <section class="container">
+    <div class="content-section p-1 mt-5">
+      <div class="m-3">
+        <h2 class="text-center container text-break">{{notes.title}}</h2>
+      </div>
+
+      <hr class="p-0 m-0" />
+      <p class="text-justify p-5 mt-5 text-break">{{notes.description}}</p>
+      <div class="text-center container">
+        <a href="{% url 'edit-note' notes.id %}" class="btn btn-dark"> Edit </a>
+      </div>
+      <hr />
+    </div>
+  </section>
+
+  {% endblock content %}
+</html>

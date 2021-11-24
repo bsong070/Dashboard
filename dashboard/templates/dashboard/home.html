@@ -1,0 +1,58 @@
+{% extends 'dashboard/base.html' %} {% load static %} {% block content %}
+
+<section class="container text-center">
+  <h3>Welcome</h3>
+
+  <hr />
+  <br />
+  <div class="row">
+    <div class="col-md-3">
+      <a href="{% url 'notes' %}">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{% static 'images/note.jpg' %}"
+            alt="Notes image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Notes</h5>
+            Take notes and freely modify or delete
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="{% url 'news' %}">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{% static 'images/news.jpg' %}"
+            alt="Notes image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">News</h5>
+            Search for news and get your morning dose
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3">
+      <a href="{% url 'todo'%}">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{% static 'images/todo.png' %}"
+            alt="Notes image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">To Do</h5>
+            Add items on your list and check them off one by one
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br /><br /><br />
+</section>
+{% endblock content %}
