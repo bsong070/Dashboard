@@ -1,0 +1,1 @@
+web gunicorn notesfront.wsgi:application --log-file -
